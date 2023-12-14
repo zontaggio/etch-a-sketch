@@ -58,4 +58,3 @@ slider.oninput = function() {
 // Create the initial grid
 createGrid(slider.value);
 matrixSize.innerHTML = '16x16'
-x
