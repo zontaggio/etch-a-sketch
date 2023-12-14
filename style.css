@@ -1,0 +1,46 @@
+.line {
+    display: flex;
+    height: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.item {
+    display: flex;
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+    flex-wrap: 0;
+}
+
+.line:first-child .item {
+    border-top: 1px solid black;
+}
+
+.item:first-child {
+    border-left: 1px solid black;
+}
+
+.slide-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0px;
+}
+
+.main-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#instructions {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0px;
+}
+
+

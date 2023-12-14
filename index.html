@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etch-a-Sketch</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="main-title">
+        <h1>Etch-a-Sketch</h1>
+    </div>
+
+    <div class="slide-container">
+        <div id="matrix-size">16x16</div>
+        <input type="range" min="1" max="64" value="16" class="slider" id="myRange">
+      </div>
+
+    <div id="draw-container"></div>
+
+    <div id="instructions">Hold left-click for paint. Swipe without clicking to erase.</div>
+    <script src="./script.js"></script>
+</body>
+</html>
