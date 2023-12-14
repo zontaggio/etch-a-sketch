@@ -22,12 +22,17 @@ function createGrid(value) {
     addMouseOverEventToItems();
 }
 
+// Creates a random number between 0 and max (for rgb use)
+function randomColor(max) {
+    return Math.floor(Math.random() * max);
+}
+
 // Mouseover to paint it with black color and unpaint it if not clicked
 function addMouseOverEventToItems() {
     document.querySelectorAll('div.item').forEach(item => {
         item.addEventListener('mouseover', function() {
-            if (isLeftMouseButtonDown) {
-                item.style.backgroundColor = "black";
+            if (isLeftMouseButtonDown) { 
+                item.style.backgroundColor = "rgb(" + randomColor(255) + "," + randomColor(255) + "," + randomColor(255);
             } else {
                 item.style.backgroundColor = "";
             }
@@ -57,4 +62,4 @@ slider.oninput = function() {
 
 // Create the initial grid
 createGrid(slider.value);
-matrixSize.innerHTML = '16x16'
+matrixSize.innerHTML = '16x16';

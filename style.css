@@ -7,24 +7,33 @@
 
 .item {
     display: flex;
-    border-bottom: 1px solid black;
-    border-right: 1px solid black;
     width: 20px;
     height: 20px;
     flex-shrink: 0;
     flex-wrap: 0;
+    background-color: white
 }
 
 .line:first-child .item {
     border-top: 1px solid black;
 }
 
+.line:last-child .item {
+    border-bottom: 1px solid black;
+}
+
 .item:first-child {
     border-left: 1px solid black;
 }
 
+.item:last-child {
+    border-right: 1px solid black;
+}
+
 .slide-container {
     display: flex;
+    color: white; 
+    background-color: #0F2167;
     align-items: center;
     justify-content: center;
     padding: 20px 0px;
@@ -34,13 +43,23 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: #4CB9E7;
 }
 
 #instructions {
     display: flex;
+    background-color: #0F2167;
+    color: white;
     align-items: center;
     justify-content: center;
-    padding: 20px 0px;
+    padding: 20px;
 }
 
+#draw-container {
+    padding: 20px 0px;
+    background-color: #FFECD6;
+}
 
+#matrix-size {
+    padding: 0px 20px;
+}
